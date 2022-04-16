@@ -1,7 +1,8 @@
 .service{
     text-align: center;
-    /* border: 1px solid gray; */
-    margin:50px 5px;
+    /* border: 1px solid gray;
+    height: 150; */
+    margin-bottom: 30%;
 }
 .service img{
     height: 70%;
