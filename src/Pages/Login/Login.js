@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Login.css'
 import auth from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -17,6 +19,19 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
+    const forgetPassword = async ()=> {
+        const email = emailRef.current.value;
+        if(email){
+            await sendPasswordResetEmail(email);
+            toast('Password reset email sent');
+        }
+        else{
+            toast('Please enter your email');
+        }
+    }
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const handleLogin = event => {
         event.preventDefault();
         const email = emailRef.current.value;
@@ -25,7 +40,8 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
     if (user) {
-        navigate('/home');
+        // navigate('/home');
+        navigate(from, { replace: true });
     }
     if (error) {
         errorElement = <p className='text-danger mt-3'>Error: {error?.message}</p>
@@ -47,8 +63,8 @@ const Login = () => {
                 {errorElement}
             </Form>
             <p>new here? <Link to='/register' className='text-primary pe-auto'>please register</Link> </p>
-            <p>Forget password?<Link to='/login' className='text-primary pe-auto'>Reset Password</Link></p>
-
+            <p>Forget password?<Link onClick={forgetPassword} to='/login' className='text-primary pe-auto'>Reset Password</Link></p>
+            <ToastContainer />
         </div>
     );
 };
