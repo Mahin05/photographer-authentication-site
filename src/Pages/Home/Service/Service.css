@@ -7,3 +7,10 @@
     height: 70%;
     width: 80%;
 }
+.service-btn-style{
+    background-color:darkred;
+    border: none;
+}
+.service-btn-style:hover{
+    background-color: rgba(139, 0, 0, 0.815);
+}

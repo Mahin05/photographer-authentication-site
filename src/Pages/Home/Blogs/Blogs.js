@@ -44,7 +44,7 @@ const Blogs = () => {
             </Table>
             <p className='mt-5'>Question-2: Why are you using firebase? What other options do you have to implement authentication?</p>
             <p>Answer:</p>
-            <p>The Firebase Realtime Database lets you build rich, collaborative applications by allowing secure access to the database directly from client-side code. Data is persisted locally, and even while offline, realtime events continue to fire, giving the end user a responsive experience. </p>
+            <p>The Firebase Realtime Database lets you build rich, collaborative applications by allowing secure access to the database directly from client-side code. Data is persisted locally, and even while offline, realtime events continue to fire, giving the end user a responsive experience. <br />  It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more. </p>
             <p className='mt-5'>Question-3: What other services does firebase provide other than authentication?</p>
             <p>Answer:</p>
             <p>Tother services does firebase provide other than authentication are: <br />

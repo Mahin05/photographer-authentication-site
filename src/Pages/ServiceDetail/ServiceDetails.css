@@ -1,0 +1,11 @@
+textarea{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    color: rgb(128, 128, 128);
+    padding-left: 2%;
+}
+@media only screen and (max-width:576px){
+    .btn-m{
+        margin-bottom: 120%;
+    }
+}

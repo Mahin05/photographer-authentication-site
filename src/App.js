@@ -13,6 +13,7 @@ import CheckOut from './Pages/CheckOut/CheckOut/CheckOut'
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import Blogs from './Pages/Home/Blogs/Blogs';
 import Footer from './Pages/Shared/Footer/Footer'
+import Album from './Pages/Home/Album/Album';
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
         <Route path="/about" element={<AboutMe></AboutMe>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/register" element={<Register></Register>} />
-        <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>} />
         <Route path='/blogs' element={<Blogs></Blogs>} />
-        <Route path='/checkout' element={
+        <Route path='/album' element={<Album></Album>} />
+        <Route path='/service/:serviceId' element={
           <RequiredAuth>
-            <CheckOut></CheckOut>
+            <ServiceDetail></ServiceDetail>
           </RequiredAuth>
         } />
+        <Route path='/checkout' element={<CheckOut></CheckOut>} />
         <Route path='*' element={<PageNotFound></PageNotFound>}/>
       </Routes>
       <Footer></Footer>
