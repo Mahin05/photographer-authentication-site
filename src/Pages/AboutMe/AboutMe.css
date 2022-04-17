@@ -1,4 +1,7 @@
-img{
+html,body{
+    overflow-x: hidden;
+}
+.about-img{
     width: 20%;
     height: 10%;
     margin-right: 4%;
@@ -8,7 +11,7 @@ img{
     margin-left: 15%;
     margin-top: 50px;
 }
-h2{
+.about-h2{
     text-align: start;
     width: 80%;
     margin-top: 30px;
@@ -20,18 +23,21 @@ span{
     color: black;
 }
 @media only screen and (max-width:576px){
+    html,body{
+        overflow-x: hidden;
+    }
     .about-style{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-left: 14%;
         margin-top: 50px;
     }
-    img{
+    .about-img{
         width: 70%;
         height: 90%;
         margin-right: 4%;
     }
-    h2{
+    .about-h2{
         text-align: start;
         width: 80%;
         margin-top: 30px;
