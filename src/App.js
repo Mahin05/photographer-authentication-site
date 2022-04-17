@@ -12,6 +12,7 @@ import RequiredAuth from './Pages/RequiredAuth/RequiredAuth';
 import CheckOut from './Pages/CheckOut/CheckOut/CheckOut'
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import Blogs from './Pages/Home/Blogs/Blogs';
+import Footer from './Pages/Shared/Footer/Footer'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         } />
         <Route path='*' element={<PageNotFound></PageNotFound>}/>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

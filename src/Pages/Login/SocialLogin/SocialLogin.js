@@ -34,7 +34,7 @@ const SocialLogin = () => {
             <div className='btn-style-set'>
                 <button onClick={()=>signInWithGoogle()} className='btn btn-info mt-3'><img src={google} alt="" />Google sign in</button>
             </div>
-            <div className='btn-style-set'>
+            <div className='btn-style-set btn-2'>
                 <button onClick={()=>signInWithGithub()} className='btn btn-info mt-2'><img src={git} alt="" /> Github sign in</button>
             </div>
         </div>

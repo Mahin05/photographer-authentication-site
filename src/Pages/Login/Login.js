@@ -62,8 +62,8 @@ const Login = () => {
                 </Button>
                 {errorElement}
             </Form>
-            <p>new here? <Link to='/register' className='text-primary pe-auto'>please register</Link> </p>
-            <p>Forget password?<Link onClick={forgetPassword} to='/login' className='text-primary pe-auto'>Reset Password</Link></p>
+            <p className='mt-3'>new here? <Link to='/register' className='text-primary pe-auto'>please register</Link> </p>
+            <p className='forget-pass-style'>Forget password?<Link onClick={forgetPassword} to='/login' className='text-primary pe-auto'>Reset Password</Link></p>
             <ToastContainer />
         </div>
     );

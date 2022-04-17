@@ -3,10 +3,16 @@
     text-align: start;
     width: 40%;
 }
+.forget-pass-style{
+    margin-bottom: 33%;
+}
 @media only screen and (max-width:576px){
     .form-style{
         margin-top: 30px;
         text-align: start;
         width: 60%;
+    }
+    .forget-pass-style{
+        margin-bottom: 171%;
     }
 }

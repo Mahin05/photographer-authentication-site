@@ -1,10 +1,10 @@
 .line-set{
-    width: 30%;
+    width: 18%;
     color: blue;
 
 }   
 .set2{
-    margin-left: 18%;
+    margin-left: 31%;
 }
 .btn-style-set img{
     width: 50px;
@@ -12,4 +12,17 @@
 }
 .btn{
     padding: 5px 30px;
+}
+@media only screen and (max-width:576px){
+    .btn-2{
+        margin-bottom: 42%;
+    }
+    .line-set{
+        width: 23%;
+        color: blue;
+    
+    }  
+    .set2{
+        margin-left: 22%;
+    }
 }
