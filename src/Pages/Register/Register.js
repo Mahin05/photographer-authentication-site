@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin/SocialLogin'
 import { toast, ToastContainer } from 'react-toastify';
+import './Register.css'
 
 
 const Register = () => {
@@ -27,7 +28,7 @@ const Register = () => {
     return (
         <div>
             <Form onSubmit={handleRegistration} className='container mx-auto form-style'>
-                <h2 className='text-primary text-center'>Register</h2>
+                <h2 className='text-reg text-center'>Register</h2>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" name="email" placeholder="Enter email" required />
                 </Form.Group>
@@ -38,7 +39,7 @@ const Register = () => {
                 <input onClick={() => setTerms(!terms)} type="checkbox" name="terms" id="terms" />
                 <label className={terms ? 'ms-2 text-primary' : 'ms-2 text-danger'} htmlFor="terms">Accept terms & condistions</label> <br />
                 <Button disabled={!terms} className='my-2' variant="primary" type="submit">
-                    Submit
+                    Register
                 </Button>
                 <p>Already registered? <Link to='/login' className='text-primary pe-auto'>please login</Link> </p>
             </Form>

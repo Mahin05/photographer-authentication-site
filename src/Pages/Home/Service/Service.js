@@ -16,7 +16,7 @@ const Service = ({ service }) => {
                 <Card.Title>{name}</Card.Title>
                 <h4>${price}</h4>
                 <Card.Text>{description}</Card.Text>
-                <Button className='service-btn-style'  onClick={()=>navigateToServiceDetail(id)}>Book Now</Button>
+                <Button className='service-btn-style'  onClick={()=>navigateToServiceDetail(id)}>Check Out</Button>
             </Card.Body>
         </Card>
     );

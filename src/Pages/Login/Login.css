@@ -3,6 +3,9 @@
     text-align: start;
     width: 40%;
 }
+.text-login{
+    color: darkred;
+}
 .forget-pass-style{
     margin-bottom: 33%;
 }

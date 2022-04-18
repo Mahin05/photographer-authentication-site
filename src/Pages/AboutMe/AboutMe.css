@@ -1,26 +1,29 @@
 html,body{
     overflow-x: hidden;
 }
+.text-style{
+    color: darkred;
+}
 .about-img{
-    width: 20%;
-    height: 10%;
+    width: 30%;
+    height: 40%;
     margin-right: 4%;
 }
 .about-style{
     display: flex;
     margin-left: 15%;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 4%;
 }
 .about-h2{
     text-align: start;
     width: 80%;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 23px;
     color: darkred;
 }
 span{
-    font-size: 28px;
+    font-size: 23px;
     color: black;
 }
 @media only screen and (max-width:576px){
@@ -31,22 +34,23 @@ span{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-left: 14%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .about-img{
-        width: 70%;
-        height: 90%;
+        width: 75%;
+        height: 100%;
         margin-right: 4%;
+        margin-bottom: 20px;
     }
     .about-h2{
         text-align: start;
         width: 80%;
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 15px;
         color: darkred;
     }
     span{
-        font-size: 20px;
+        font-size: 15px;
         color: black;
     }
     

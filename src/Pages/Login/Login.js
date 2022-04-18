@@ -48,7 +48,7 @@ const Login = () => {
     }
     return (
         <div className='container mx-auto form-style'>
-            <h2 className='text-primary text-center'>Login</h2>
+            <h2 className='text-login text-center'>Login</h2>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" ref={emailRef} required />

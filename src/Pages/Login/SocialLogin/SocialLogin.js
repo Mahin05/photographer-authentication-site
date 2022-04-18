@@ -32,10 +32,10 @@ const SocialLogin = () => {
             </div>
             <p>{errorElement}</p>
             <div className='btn-style-set'>
-                <button onClick={()=>signInWithGoogle()} className='btn btn-info mt-3'><img src={google} alt="" />Google sign in</button>
+                <button onClick={()=>signInWithGoogle()} className='btn btn-color mt-3'><img src={google} alt="" />Google sign in</button>
             </div>
             <div className='btn-style-set btn-2'>
-                <button onClick={()=>signInWithGithub()} className='btn btn-info mt-2'><img src={git} alt="" /> Github sign in</button>
+                <button onClick={()=>signInWithGithub()} className='btn btn-color mt-2'><img src={git} alt="" /> Github sign in</button>
             </div>
         </div>
     );

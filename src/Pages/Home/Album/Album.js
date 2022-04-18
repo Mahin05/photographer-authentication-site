@@ -4,6 +4,8 @@ import moment1 from '../../../Images/Album/moment-2.jpg'
 import moment2 from '../../../Images/Album/moment-1.jpg'
 import moment3 from '../../../Images/Album/moment-3.jpg'
 import moment4 from '../../../Images/Album/moment-4.jpg'
+import moment5 from '../../../Images/Album/71O9DM6EQJL._AC_SL1024_.jpg'
+import moment6 from '../../../Images/Album/pexels-photo-792777.jpeg'
 import { Carousel } from 'react-bootstrap';
 
 const Album = () => {
@@ -38,6 +40,20 @@ const Album = () => {
                         className="d-block w-100"
                         src={moment2}
                         alt="Second slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={moment6}
+                        alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={moment5}
+                        alt="First slide"
                     />
                 </Carousel.Item>
             </Carousel>

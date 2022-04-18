@@ -4,8 +4,8 @@ import './Blogs.css'
 
 const Blogs = () => {
     return (
-        <div className='q-n-a container'>
-            <h2>Q&A</h2>
+        <div className='q-n-a container mt-4'>
+            <h2>Blogs</h2>
             <p className='mt-5'>Question-1: What is the differences between authorization and authentication?</p>
             <p>Answer:</p>
             <Table bordered>

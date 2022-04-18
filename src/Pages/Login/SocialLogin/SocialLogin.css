@@ -2,7 +2,15 @@
     width: 18%;
     color: blue;
 
-}   
+} 
+.btn-color{
+    background-color: rgba(240, 248, 255, 0.493);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+}  
 .set2{
     margin-left: 31%;
 }
