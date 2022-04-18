@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin/SocialLogin'
 import { toast, ToastContainer } from 'react-toastify';
 import './Register.css'
+import Loading from '../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -17,6 +18,9 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    if (loading) {
+        return <Loading></Loading>
+    }
     // const [sendEmailVerification, sending] = useSendEmailVerification(auth);
     const handleRegistration = async (event) => {
         event.preventDefault();
