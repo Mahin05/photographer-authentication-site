@@ -6,6 +6,9 @@
 .text-login{
     color: darkred;
 }
+.text-reg{
+    color: darkred;
+}
 @media only screen and (max-width:576px){
     .form-style{
         margin-top: 30px;
