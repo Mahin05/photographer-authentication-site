@@ -26,10 +26,10 @@ const ServiceDetail = () => {
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control type="number" name="number" placeholder="Enter phone number" required />
                     </Form.Group>
-                    <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                    <FloatingLabel controlId="floatingTextarea2" label="address">
                         <Form.Control
                             as="textarea"
-                            placeholder="Leave a comment here"
+                            placeholder="Enter address"
                             style={{ height: '100px' }}
                             required
                         />
