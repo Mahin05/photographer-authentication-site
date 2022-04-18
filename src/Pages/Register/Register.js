@@ -37,7 +37,7 @@ const Register = () => {
                     <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
                 <input onClick={() => setTerms(!terms)} type="checkbox" name="terms" id="terms" />
-                <label className={terms ? 'ms-2 text-primary' : 'ms-2 text-danger'} htmlFor="terms">Accept terms & condistions</label> <br />
+                <label className={terms ? 'ms-2 text-primary' : 'ms-2 text-danger'} htmlFor="terms">Accept terms & conditions</label> <br />
                 <Button disabled={!terms} className='my-2' variant="primary" type="submit">
                     Register
                 </Button>
